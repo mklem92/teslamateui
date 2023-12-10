@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-card: #f4f4f4;
+  --color-background: #ededef;
+  --color-primary: #5a5a5a;
+  --color-secondary: #a7a7a7;
+  --color-neutral: #848687;
+  --color-selected: #292c34;
+  --color-success: #01e457;
+
+  --color-text-primary: #3d3d3f;
+  --color-text-selected: #3e5795;
+
+  font-family: "Nunito", sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--color-background);
+}
+
+.dark {
+  --color-card: #1a1e24;
+  --color-background: #10151b;
+  --color-primary: #161719;
+  --color-secondary: #2d2f34;
+  --color-neutral: #848687;
+  --color-selected: #27292e;
+  --color-success: #06e184;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #787a7d;
+  --color-text-selected: #3e5795;
+}
