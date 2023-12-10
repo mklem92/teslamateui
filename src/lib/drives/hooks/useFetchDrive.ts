@@ -15,7 +15,7 @@ const useFetchDrive = ({ car, drive_id }: Props) => {
       if (!car || !drive_id) return;
 
       const { data } = await axios.get<GetDriveResponse>(
-        `http://localhost:3000/api/v1/cars/${car.car_id}/drives/${drive_id}/`
+        `http://localhost:3030/api/v1/cars/${car.car_id}/drives/${drive_id}/`
       );
       return data;
     },

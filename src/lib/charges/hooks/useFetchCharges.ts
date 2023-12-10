@@ -14,7 +14,7 @@ const useFetchCharges = ({ car }: Props) => {
       if (!car) return;
 
       const { data } = await axios.get<GetChargeResponse>(
-        `http://localhost:3000/api/v1/cars/${car.car_id}/charges`
+        `http://localhost:3030/api/v1/cars/${car.car_id}/charges`
       );
       return data;
     },

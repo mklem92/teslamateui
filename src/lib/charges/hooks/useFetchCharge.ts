@@ -13,7 +13,7 @@ const useFetchCharge = ({ car, charge_id }: Props) => {
     queryKey: ["charges", car.car_id, charge_id],
     queryFn: async () => {
       const { data } = await axios.get<GetChargeResponse>(
-        `http://localhost:3000/api/v1/cars/${car.car_id}/charges/${charge_id}/`
+        `http://localhost:3030/api/v1/cars/${car.car_id}/charges/${charge_id}/`
       );
       return data;
     },

@@ -7,7 +7,7 @@ const useFetchCars = () => {
     queryKey: ["cars"],
     queryFn: async () => {
       const { data } = await axios.get<GetCarResponse>(
-        "http://localhost:3000/api/v1/cars/"
+        "http://localhost:3030/api/v1/cars/"
       );
       return data;
     },

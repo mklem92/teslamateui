@@ -14,7 +14,7 @@ const useFetchCarStatus = ({ car }: Props) => {
       if (!car) return;
 
       const { data } = await axios.get<GetCarStatusResponse>(
-        `http://localhost:3000/api/v1/cars/${car.car_id}/status/`
+        `http://localhost:3030/api/v1/cars/${car.car_id}/status/`
       );
       return data;
     },
